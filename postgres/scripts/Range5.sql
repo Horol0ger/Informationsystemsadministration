@@ -14,8 +14,6 @@ CREATE TABLE public.ammo (
 );
 
 
-ALTER TABLE public.ammo OWNER TO postgres;
-
 --
 -- TOC entry 240 (class 1259 OID 16627)
 -- Name: ammo_buy; Type: TABLE; Schema: public; Owner: postgres
@@ -31,7 +29,6 @@ CREATE TABLE public.ammo_buy (
 );
 
 
-ALTER TABLE public.ammo_buy OWNER TO postgres;
 
 --
 -- TOC entry 239 (class 1259 OID 16626)
@@ -77,7 +74,6 @@ CREATE TABLE public.box (
 );
 
 
-ALTER TABLE public.box OWNER TO postgres;
 
 --
 -- TOC entry 220 (class 1259 OID 16438)
@@ -106,7 +102,6 @@ CREATE TABLE public.employee (
 );
 
 
-ALTER TABLE public.employee OWNER TO postgres;
 
 --
 -- TOC entry 216 (class 1259 OID 16419)
@@ -140,7 +135,6 @@ CREATE TABLE public.masterclass (
 );
 
 
-ALTER TABLE public.masterclass OWNER TO postgres;
 
 --
 -- TOC entry 231 (class 1259 OID 16558)
@@ -171,7 +165,6 @@ CREATE TABLE public.news (
 );
 
 
-ALTER TABLE public.news OWNER TO postgres;
 
 --
 -- TOC entry 225 (class 1259 OID 16508)
@@ -203,7 +196,6 @@ CREATE TABLE public.programm (
 );
 
 
-ALTER TABLE public.programm OWNER TO postgres;
 
 --
 -- TOC entry 227 (class 1259 OID 16525)
@@ -232,7 +224,6 @@ CREATE TABLE public.refreshtoken (
 );
 
 
-ALTER TABLE public.refreshtoken OWNER TO postgres;
 
 --
 -- TOC entry 241 (class 1259 OID 16652)
@@ -262,7 +253,6 @@ CREATE TABLE public.room (
 );
 
 
-ALTER TABLE public.room OWNER TO postgres;
 
 --
 -- TOC entry 218 (class 1259 OID 16432)
@@ -296,7 +286,6 @@ CREATE TABLE public.session (
 );
 
 
-ALTER TABLE public.session OWNER TO postgres;
 
 --
 -- TOC entry 223 (class 1259 OID 16478)
@@ -325,8 +314,6 @@ CREATE TABLE public.timetable (
     date date
 );
 
-
-ALTER TABLE public.timetable OWNER TO postgres;
 
 --
 -- TOC entry 229 (class 1259 OID 16533)
@@ -361,7 +348,6 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO postgres;
 
 --
 -- TOC entry 214 (class 1259 OID 16399)
@@ -390,7 +376,6 @@ CREATE TABLE public.usersinmc (
 );
 
 
-ALTER TABLE public.usersinmc OWNER TO postgres;
 
 --
 -- TOC entry 235 (class 1259 OID 16597)
@@ -419,7 +404,6 @@ CREATE TABLE public.weaponinprog (
 );
 
 
-ALTER TABLE public.weaponinprog OWNER TO postgres;
 
 --
 -- TOC entry 233 (class 1259 OID 16581)
@@ -451,7 +435,6 @@ CREATE TABLE public.weapons (
 );
 
 
-ALTER TABLE public.weapons OWNER TO postgres;
 
 --
 -- TOC entry 3460 (class 0 OID 16614)

@@ -21,6 +21,8 @@ public class MainController {
     UserRepository users;
     @GetMapping("/getu")
     public ResponseEntity<List<User>> getUsers(){
+
+        System.out.println(users.findAll());
         return ResponseEntity.ok(((List<User>) users.findAll()));
     }
 }
