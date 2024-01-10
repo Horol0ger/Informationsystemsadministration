@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  backend:
+    build: ./tir
+    ports:
+      - 8080:8080
+    environment:
+      - spring.datasource.url=jdbc:postgresql://postgres:5432/Range
+      - spring.datasource.username=test
+      - spring.datasource.password=test
+      - jwt.token.secret=ofit
+      - jwt.token.expired=3600000
+      - jwt.refreshToken.expired=2592000000
+    depends_on:
+      - postgres
+  frontend:
+    build:
+      context: ./ProjectReact
+      args:
+        - REACT_APP_API_URL=http://localhost:8080
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: "Range"
+      POSTGRES_USER: "test"
+      POSTGRES_PASSWORD: "test"
+    volumes:
+      - ./postgres/scripts:/docker-entrypoint-initdb.d
+    ports:
+      - 5432:5432
